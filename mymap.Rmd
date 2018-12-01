@@ -1,0 +1,19 @@
+---
+title: Mapa RSGIS
+output: pdf_document
+---
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(rmarkdown)
+library(htmlwidgets)
+library (webshot)
+library(knitr)
+
+webshot::install_phantomjs()
+
+saveWidget( MapDwn(), file= "temp.html")
+
+MapPDF =  webshot::webshot("temp.html","temp.pdf")
+
+knitr::include_graphics(MapPDF)
+```
