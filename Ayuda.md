@@ -13,9 +13,6 @@ Añade unas coordenadas a tu shapefile, para este caso debes subir un archivo cs
 ### Ver DBF
 Permite la visualización interactiva en forma de tabla de la base de datos del shapefile.
 
-### Descargar pdf
-Descarga una imagen de tu mapa en pdf.
-
 ## Editar
 Edita los puntos y filtra los datos.
 
